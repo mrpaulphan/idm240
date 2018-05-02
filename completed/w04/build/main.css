@@ -1,0 +1,76 @@
+/*Mobile First*/
+
+body {
+	background-color: #000;
+	color: #fff;
+}
+
+#wrapper {
+
+}
+
+
+/*Tablet*/
+
+@media screen and (min-width : 768px) {
+	#fishbowl1 {
+		float: left;
+		width: 50%;
+	}
+
+	#fishbowl2 {
+
+/*		stage 01 */
+
+/*		float: right;
+		width: 50%;*/
+
+
+/* 		stage 02*/
+		float: right;
+		width: 25%;
+		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+	}
+}
+
+
+/*Desktop*/
+
+@media screen and (min-width : 1024px) {
+
+}
+
+/* SVG STYLES stage 01 */
+
+/*.fgills:hover {
+	cursor: pointer;
+	stroke: #35a221;
+}
+
+
+#fbait:hover {
+	cursor: pointer;
+	fill: #aa0c0c;
+	filter: url(#itBeBlurred);
+}*/
+
+
+/* SVG STYLES stage 02 */
+
+#fish:hover {
+	cursor: pointer;
+}
+
+#fish:hover .fgills {
+	stroke: #35a221;
+	stroke-width: 1.5;
+}
+
+#fish:hover #fbait {
+	fill: #aa0c0c;
+	filter: url(#itBeBlurred);
+}
