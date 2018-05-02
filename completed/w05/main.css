@@ -6,26 +6,55 @@ body {
 	color: #FFFFFF;
 }
 
-#wrapper {
+.wrapper {
 	margin: 0px;
 }
+.svg-block {
+	width: 400px;
+}
 
+.saw-svg {
+	fill: #FFFFFF;
+	stroke: #000000;
+	transition-property: stroke;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	transition-delay: 3.1s;
+}
+.saw-svg:hover {
+	cursor:pointer;
+	fill: #AA0C0C;
+	fill-opacity: 0.8; /* 0-1 */
+	stroke: #D8D80B;
+	stroke-width: 0.10em;
+	stroke-opacity: 0.5;  		/* 0-1 */
+	stroke-linejoin: round;	/* miter, round, bevel */
+}
+
+.saw-svg__dot {
+	fill: #FFFFFF;
+	transition-property: fill;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	transition-delay: 0.1s;
+}
+
+.saw-svg__dot:hover {
+	fill: #AA0C0C;
+}
 /*Phone landscape*/
 
 @media screen and (min-width : 480px) {
-	
 }
 
 
 /*Tablet*/
 
 @media screen and (min-width : 768px) {
-	
 }
 
 
 /*Desktop*/
 
 @media screen and (min-width : 1280px) {
-	
 }
