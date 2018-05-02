@@ -1,26 +1,27 @@
-/*Mobile First*/
-
-body {
-
-}
-
-#wrapper {
-
+.png-fish {
+	width: 100%;
 }
 
 
-/*Tablet*/
-
-@media screen and (min-width : 768px) {
-
+.svg-fish {
+	width: 400px;
 }
 
 
-/*Desktop*/
-
-@media screen and (min-width : 1024px) {
-
+.bg-svg-fish {
+	background-image: url("img/angler-fish.svg");
+	width: 400px;
+	height: 400px;
 }
 
+.svg {
+	width: 300px;
+}
 
+.svg-bg {
+	fill: green;
+}
 
+.svg-fish {
+    transform: scale(0.7);
+}

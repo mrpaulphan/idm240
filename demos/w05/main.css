@@ -1,0 +1,32 @@
+/*Mobile First*/
+
+body {
+	margin: 0px;
+	background-color: #000;
+	color: #fff;
+}
+
+#wrapper {
+	margin: 0px;
+}
+
+
+/*Phone landscape*/
+@media screen and (min-width : 480px) {
+
+}
+
+
+/*Tablet*/
+@media screen and (min-width : 768px) {
+
+}
+
+
+/*Desktop*/
+@media screen and (min-width : 1280px) {
+
+}
+
+
+
