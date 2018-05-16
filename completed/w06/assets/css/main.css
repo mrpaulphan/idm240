@@ -1,0 +1,59 @@
+/* Base */
+* {
+	box-sizing: border-box;
+}
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px 0;
+	overflow: hidden;
+}
+.svg {
+	width: 250px;
+	height: 250px;
+	clear: both;
+	display: block;
+	cursor: pointer;
+}
+
+
+/* Knife */
+
+.knife-svg {
+	transition: 1s all ease;
+}
+.knife-svg:hover {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+
+/* Car */
+.car-svg {
+	-webkit-transition: 5s all ease;
+	transition: 5s all ease;
+}
+.car-svg:hover {
+	-webkit-transform: translatex(800%);
+	transform: translatex(800%);
+}
+/* Microphone */
+.microphone-svg {
+	-webkit-transition: 500ms all ease;
+	transition: 500ms all ease;
+}
+.microphone-svg__head {
+	fill: #646B79;
+}
+.microphone-svg__screen {
+	fill: black;
+}
+.microphone-svg__neck {
+	fill: black;
+}
+
+/* Car */
+.microphone-svg:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}

@@ -1,0 +1,167 @@
+/* Base */
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px 0;
+	overflow: hidden;
+}
+
+.svg {
+	width: 250px;
+	height: 250px;
+	clear: both;
+	display: block;
+	cursor: pointer;
+}
+
+/* Animations */
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes left-to-right {
+	0% {
+		-webkit-transform: translatex(0%);
+		transform: translatex(0%);
+	}
+	50% {
+		-webkit-transform: translatex(100%);
+		transform: translatex(100%);
+	}
+	100% {
+		-webkit-transform: translatex(800%);
+		transform: translatex(800%);
+	}
+}
+@keyframes left-to-right {
+	0% {
+		-webkit-transform: translatex(0%);
+		transform: translatex(0%);
+	}
+	50% {
+		-webkit-transform: translatex(100%);
+		transform: translatex(100%);
+	}
+	100% {
+		-webkit-transform: translatex(800%);
+		transform: translatex(800%);
+	}
+}
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	25% {
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+	}
+	50% {
+		-webkit-transform: scale(0.7);
+		transform: scale(0.7);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+@keyframes pulse {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	25% {
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+	}
+	50% {
+		-webkit-transform: scale(0.7);
+		transform: scale(0.7);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+/* Animatoins CSS */
+.knife-svg {
+	-webkit-animation-name: spin;
+	animation-name: spin;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+	-webkit-animation-iteration-count: 3;
+	animation-iteration-count: 3;
+	/* number|infinite|initial|inherit; */
+	animation-direction: reverse;
+	/* 
+		The animation-direction property can have the following values:
+		normal - The animation is played as normal (forwards). This is default
+		reverse - The animation is played in reverse direction (backwards)
+		alternate - The animation is played forwards first, then backwards
+		alternate-reverse - The animation is played backwards first, then forwards
+		*/
+}
+
+.car-svg {
+	-webkit-animation-name: left-to-right;
+	animation-name: left-to-right;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-delay: 6s;
+	animation-delay: 6s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	/* 
+		none 	Default value. Animation will not apply any styles to the element before or after it is executing
+		forwards 	The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)
+		backwards 	The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period
+		both 	The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions
+		initial 	Sets this property to its default value. Read about initial
+		inherit 	Inherits this property from its parent element. Read about inherit
+		*/
+}
+
+.microphone-svg {
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	/* number|infinite|initial|inherit; */
+}
+
+/* Microphone */
+.microphone-svg__head {
+	fill: #646B79;
+}
+
+.microphone-svg__screen {
+	fill: black;
+}
+
+.microphone-svg__neck {
+	fill: black;
+}
