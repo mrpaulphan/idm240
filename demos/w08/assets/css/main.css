@@ -1,0 +1,56 @@
+/* Base */
+* {
+	box-sizing: border-box;
+}
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px 0;
+	overflow: hidden;
+}
+.svg {
+	width: 250px;
+	height: 250px;
+	clear: both;
+	display: block;
+	cursor: pointer;
+}
+
+.icon-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.row__heading {
+	text-align: left;
+}
+@keyframes spin {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+/* Animatoins CSS */
+.animate {
+	-webkit-animation-name: spin;
+	animation-name: spin;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+	-webkit-animation-iteration-count: 3;
+	animation-iteration-count: 3;
+	/* number|infinite|initial|inherit; */
+	animation-direction: reverse;
+	/* 
+		The animation-direction property can have the following values:
+		normal - The animation is played as normal (forwards). This is default
+		reverse - The animation is played in reverse direction (backwards)
+		alternate - The animation is played forwards first, then backwards
+		alternate-reverse - The animation is played backwards first, then forwards
+		*/
+}
